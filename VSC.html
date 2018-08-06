@@ -1,0 +1,50 @@
+<html>
+<head>
+    <style>
+        body
+        .black{
+            color:black
+        }
+        .red{
+            color:rgb(255, 0, 0)
+        }
+        h1, h2, h3, h4{
+            color:darkslateblue
+        }
+        ul.css-menu {
+            list-style: none;
+            border-bottom: 3px purple solid;
+            padding-bottom: 10px;
+        }
+        ul.css-menu li {
+            display: inline;
+            margin-right: 60px;
+        }
+        ul.css-menu li a {
+            color:darkgreen;
+            background: rgb(243, 237, 226);
+            border: 1 px purple solid;
+            border-bottom: none;
+            padding: 10px 14px;
+        }
+        ul.css-menu li a.selected {
+            color: purple;
+            background: rgb(243, 237, 226);
+            border: 2px purple solid;
+            border-bottom: 1px #ffffff solid;
+            padding: 13px 10px 13px 10px;
+        }
+        ul.css-menu li a:active {
+            color:darkorchid
+        }
+    </style>
+</head>
+<body>
+    <ul class="css-menu">
+        <li> <a href="#Текст">Главная</a> </li>
+        <li> <a href="#">Не очень главная</a> </li>
+        <li> <a href="#" class="selected">Средняя</a> </li>
+        <li> <a href="#">Левая</a> </li>
+    </ul>  
+</body>
+</html>
