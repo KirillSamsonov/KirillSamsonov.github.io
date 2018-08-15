@@ -1,0 +1,66 @@
+<html>
+    <title>Kick Scooter MEAT</title>
+    <head>
+<style>
+        body
+        { background: url(picture/fonsait2.jpg);
+        background-size: 20%;
+        }
+        .black{
+            color:black
+        }
+        .red{
+            color:rgb(255, 0, 0)
+        }
+        h1, h2, h3, h4{
+            color:darkslateblue
+        }
+        ul.css-menu {
+            list-style: none;
+            border-bottom: 3px #800080 solid;
+            padding-bottom: 10px;
+        }
+        ul.css-menu li {
+            display: inline;
+            margin-right: 60px;
+        }
+        ul.css-menu li a {
+            color:#4faf00;
+            background: url(picture/fonsait2.jpg);
+            border: 1 px #800080 solid;
+            border-bottom: none;
+            padding: 10px 14px;
+        }
+        ul.css-menu li a.selected {
+            color: #800080;
+            background: url(picture/fonsait2.jpg);
+            border: 2px #800080 solid;
+            border-bottom: 1px #ffffff solid;
+            padding: 13px 10px 13px 10px;
+        }
+        ul.css-menu li a:active {
+            color:darkorchid
+        }
+    </style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".selected").mouseover(function(){ $("#samokati").slideDown(1000)});
+        $(".selected").mouseout(function(){ $("#samokati").slideUp(1000)})
+    })
+    </script>
+</head>
+<body>
+        <ul class="css-menu">
+                <li> <a href="#" class="selected">Самокаты</a> </li>
+                <li> <a href="#">Детали</a> </li>
+                <li> <a href="#">Аксессуары</a> </li>
+                <li> <a href="#">О нас</a> </li>
+            </ul>    
+    <ul id="samokati">
+        <li> <a href="https://www.google.ru/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"> Дёрт-самокаты </a> </li>
+        <li> <a href="https://www.google.ru/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">Трюковые самокаты </a> </li>
+    </ul>
+</body>
+</html>
