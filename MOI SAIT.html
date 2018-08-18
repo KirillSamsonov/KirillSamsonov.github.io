@@ -1,66 +1,206 @@
 <html>
     <title>Kick Scooter MEAT</title>
     <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+                crossorigin="anonymous">
 <style>
-        body
-        { background: url(picture/fonsait2.jpg);
-        background-size: 20%;
-        }
+    body {
+        background: rgb(217, 255, 217)
+    }
+     li {
+    list-style-type: none;
+   }
         .black{
-            color:black
+            color:black;
         }
         .red{
-            color:rgb(255, 0, 0)
+            color:rgb(255, 0, 0);
         }
         h1, h2, h3, h4{
-            color:darkslateblue
+            color:darkslateblue;
+            z-index: 10;
         }
         ul.css-menu {
             list-style: none;
-            border-bottom: 3px #800080 solid;
+            border-bottom: 0px #800080 solid;
             padding-bottom: 10px;
+            z-index: 10;
+            background: #c5b300;
         }
         ul.css-menu li {
             display: inline;
             margin-right: 60px;
+            z-index: 10;
         }
         ul.css-menu li a {
-            color:#4faf00;
-            background: url(picture/fonsait2.jpg);
+            color:#5a813a;
             border: 1 px #800080 solid;
             border-bottom: none;
             padding: 10px 14px;
+            z-index: 10;
         }
         ul.css-menu li a.selected {
             color: #800080;
-            background: url(picture/fonsait2.jpg);
-            border: 2px #800080 solid;
-            border-bottom: 1px #ffffff solid;
+            border: 0px #800080 solid;
             padding: 13px 10px 13px 10px;
+            z-index: 10;
         }
         ul.css-menu li a:active {
-            color:darkorchid
+            color:darkorchid;
+            z-index: 10;
+        }
+        #detali {
+            padding: 0px 230px;
+        }
+        #aksess {
+            padding: 0px 380px;
+        }
+        .footer {
+            background-color: #c5b300;
+        }
+        .container1 {
+            z-index: 1000px;
+        }
+        .card {
+            border: 2px solid #800080;
+        }
+        .card-body {
+            background: url(picture/fonsait2.jpg)
         }
     </style>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-    <script>
+    <script class="container1">
     $(document).ready(function(){
-        $(".selected").mouseover(function(){ $("#samokati").slideDown(1000)});
-        $(".selected").mouseout(function(){ $("#samokati").slideUp(1000)})
+        $(".selected").mouseover(function(){ $("#samokati").slideDown(10)});
+        $(".selected").mouseout(function(){ $("#samokati").slideUp(10)});
+        $(".detali").mouseover(function(){ $("#detali").slideDown(10)});
+        $(".detali").mouseout(function(){ $("#detali").slideUp(10)});
+        $(".aksess").mouseover(function(){ $("#aksess").slideDown(10)});
+        $(".aksess").mouseout(function(){ $("#aksess").slideUp(10)});
+
     })
     </script>
 </head>
 <body>
         <ul class="css-menu">
-                <li> <a href="#" class="selected">Самокаты</a> </li>
-                <li> <a href="#">Детали</a> </li>
-                <li> <a href="#">Аксессуары</a> </li>
-                <li> <a href="#">О нас</a> </li>
+                <form class="form-inline">
+                <li> <h5> <a href="#" class="selected">Самокаты</a> </h5> </li>
+                <li> <h5> <a href="#" class="detali">Детали</a> </h5> </li>
+                <li> <h5> <a href="#" class="aksess">Аксессуары</a> </h5> </li>
+                <li> <h5> <a href="#" class="o nas">О нас</a> </h5> </li>
+                
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-1 my-sm-0" type="submit">Search</button>
+                </form>
             </ul>    
     <ul id="samokati">
         <li> <a href="https://www.google.ru/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"> Дёрт-самокаты </a> </li>
         <li> <a href="https://www.google.ru/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">Трюковые самокаты </a> </li>
     </ul>
+    <ul id="detali">
+        <li> <a href="#"> Рули </a>
+        <li> <a href="#"> Доски </a>
+        <li> <a href="#"> Вилки </a>
+        <li> <a href="#"> Колёса </a>
+        <li> <a href="#"> Зажимы </a>
+        <li> <a href="#"> Рулевые </a>
+        <li> <a href="#"> Пэги </a>
+        <li> <a href="#"> Компрессии </a>
+        <li> <a href="#"> Подшипники </a>
+        <li> <a href="#"> Тормоза </a>
+        <li> <a href="#"> Оси и болты </a>
+        <li> <a href="#"> Грипсы </a>
+        <li> <a href="#"> Шкурки </a>
+        <li> <a href="#"> Баренды </a>
+    </ul>
+    <ul id="aksess">
+        <li> <a href="#"> Чехлы </li>
+        <li> <a href="#"> Одежда </a> </li>
+        <li> <a href="#"> Наклейки </a> </li>
+        <li> <a href="#"> Инструменты </a> </li>
+        <li> <a href="#"> Браслеты </a> </li>
+    </ul>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="picture/samok 1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> Самокат AO black </h5>
+                            <p class="card-text">Комплиты AO модель Sachem S 1.2Цена от: 17000 руб. Тут вам и T- руль , и крутая стритовая дека ...</p>
+                            <h5> 16000p. </h5>
+                            <a href="article.html" class="btn btn-success"> Подробнее... </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="picture/samok 2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Самокат Blunt KOS S5 petrol </h5>
+                            <p class="card-text">Комплиты от французского бренда Blunt модель KOS S5 собраны с особым вниманием к каждой детали...</p>
+                            <h5> 21000p. </h5>
+                            <a href="article.html" class="btn btn-success"> Подробнее... </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="picture/samok 3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Самокат FOXPRO </h5>
+                            <p class="card-text" color="red"> Нет в наличии. </p><br><br>
+                            <h5> 10000p. </h5>
+                            <a href="article.html" class="btn btn-success"> Подробнее... </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="picture/samok 4.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Самокат Phoenix chrome</h5>
+                            <p class="card-text"> Нет в наличии. </p>
+                            <h5> 17000p. </h5>
+                            <a href="article.html" class="btn btn-success"> Подробнее... </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="picture/samok 5.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> Самокат FOXPRO white</h5>
+                            <p class="card-text"> Нет в наличии. </p>
+                            <h5> 11000p. </h5>
+                            <a href="article.html" class="btn btn-success"> Подробнее... </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="card" >
+                        <img class="card-img-top" src="picture/samok 7.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Самокат DUKE yellow</h5>
+                            <p class="card-text"> Нет в наличии. </p>
+                            <h5> 7000p. </h5>
+                            <a href="article.html" class="btn btn-success"> Подробнее... </a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+            <div class="container">
+                <p>Все права под защитой</p>
+                <span> Наверное </span>
+            </div>
+        </footer>
 </body>
 </html>
