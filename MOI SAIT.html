@@ -7,7 +7,7 @@
                 crossorigin="anonymous">
 <style>
     body {
-        background: rgb(217, 255, 217)
+        background: rgb(255, 255, 255)
     }
      li {
     list-style-type: none;
@@ -25,9 +25,9 @@
         ul.css-menu {
             list-style: none;
             border-bottom: 0px #800080 solid;
-            padding-bottom: 10px;
+            padding-bottom: 1px;
             z-index: 10;
-            background: #c5b300;
+            background: #cecece;
         }
         ul.css-menu li {
             display: inline;
@@ -58,28 +58,24 @@
             padding: 0px 380px;
         }
         .footer {
-            background-color: #c5b300;
-        }
-        .container1 {
-            z-index: 1000px;
+            background-color: #cecece;
         }
         .card {
             border: 2px solid #800080;
+            border-radius: 7px;
         }
         .card-body {
-            background: url(picture/fonsait2.jpg)
+            background: url(picture/fonsait2.jpg);
+            border-radius: 7px;
         }
     </style>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-    <script class="container1">
+    <script>
     $(document).ready(function(){
-        $(".selected").mouseover(function(){ $("#samokati").slideDown(10)});
-        $(".selected").mouseout(function(){ $("#samokati").slideUp(10)});
-        $(".detali").mouseover(function(){ $("#detali").slideDown(10)});
-        $(".detali").mouseout(function(){ $("#detali").slideUp(10)});
-        $(".aksess").mouseover(function(){ $("#aksess").slideDown(10)});
-        $(".aksess").mouseout(function(){ $("#aksess").slideUp(10)});
+        $(".selected").click(function(){ $("#samokati").slideToggle(10)});
+        $(".detali").click(function(){ $("#detali").slideToggle(10)});
+        $(".aksess").click(function(){ $("#aksess").slideToggle(10)});
 
     })
     </script>
@@ -91,16 +87,13 @@
                 <li> <h5> <a href="#" class="detali">Детали</a> </h5> </li>
                 <li> <h5> <a href="#" class="aksess">Аксессуары</a> </h5> </li>
                 <li> <h5> <a href="#" class="o nas">О нас</a> </h5> </li>
-                
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-1 my-sm-0" type="submit">Search</button>
-                </form>
-            </ul>    
-    <ul id="samokati">
+            </form>
+            </ul>  
+    <ul id="samokati"> <h6>
         <li> <a href="https://www.google.ru/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"> Дёрт-самокаты </a> </li>
         <li> <a href="https://www.google.ru/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">Трюковые самокаты </a> </li>
-    </ul>
-    <ul id="detali">
+    </ul> </h6>
+    <ul id="detali"> <h6>
         <li> <a href="#"> Рули </a>
         <li> <a href="#"> Доски </a>
         <li> <a href="#"> Вилки </a>
@@ -108,31 +101,24 @@
         <li> <a href="#"> Зажимы </a>
         <li> <a href="#"> Рулевые </a>
         <li> <a href="#"> Пэги </a>
-        <li> <a href="#"> Компрессии </a>
         <li> <a href="#"> Подшипники </a>
         <li> <a href="#"> Тормоза </a>
-        <li> <a href="#"> Оси и болты </a>
         <li> <a href="#"> Грипсы </a>
         <li> <a href="#"> Шкурки </a>
-        <li> <a href="#"> Баренды </a>
-    </ul>
-    <ul id="aksess">
-        <li> <a href="#"> Чехлы </li>
-        <li> <a href="#"> Одежда </a> </li>
+    </ul> </h6>
+    <ul id="aksess"> <h6>
         <li> <a href="#"> Наклейки </a> </li>
-        <li> <a href="#"> Инструменты </a> </li>
-        <li> <a href="#"> Браслеты </a> </li>
-    </ul>
+    </ul> </h6>
     <main class="main">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-lg-4">
                     <div class="card">
-                        <img class="card-img-top" src="picture/samok 1.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="picture/samok 4 vis.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title"> Самокат AO black </h5>
                             <p class="card-text">Комплиты AO модель Sachem S 1.2Цена от: 17000 руб. Тут вам и T- руль , и крутая стритовая дека ...</p>
-                            <h5> 16000p. </h5>
+                            <h5> 17000p. </h5>
                             <a href="article.html" class="btn btn-success"> Подробнее... </a>
                         </div>
                     </div>
@@ -152,7 +138,7 @@
                     <div class="card">
                         <img class="card-img-top" src="picture/samok 3.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Самокат FOXPRO </h5>
+                            <h5 class="card-title">Самокат FOXPRO orange</h5>
                             <p class="card-text" color="red"> Нет в наличии. </p><br><br>
                             <h5> 10000p. </h5>
                             <a href="article.html" class="btn btn-success"> Подробнее... </a>
@@ -174,7 +160,7 @@
                     <div class="card">
                         <img class="card-img-top" src="picture/samok 5.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"> Самокат FOXPRO white</h5>
+                            <h5 class="card-title"> Самокат LIMIT white</h5>
                             <p class="card-text"> Нет в наличии. </p>
                             <h5> 11000p. </h5>
                             <a href="article.html" class="btn btn-success"> Подробнее... </a>
@@ -198,8 +184,9 @@
     </main>
     <footer class="footer">
             <div class="container">
-                <p>Все права под защитой</p>
-                <span> Наверное </span>
+                <p><h6>О нас</h6></p>
+                <span> Сайт Kick Scooter MEAT создан в образовательном центре "Максимум" при помощи преподавателей: Ивана Шабрашина (@sportcach) и Ильи Грубера (@gruberok).</span><br>
+                <p> ВНИМАНИЕ. На сайте нет реальных товаров! </p>
             </div>
         </footer>
 </body>
